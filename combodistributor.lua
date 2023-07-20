@@ -700,6 +700,59 @@ polyethylene = {
     }
 }
 
+ae2circuit = {
+    { -- calculation circuit
+        { -- printed silicon
+          "appliedenergistics2:material",
+          20,
+          1
+        },
+        { -- refined circuit
+          "contenttweaker:refinedcircuit",
+          0,
+          1
+        },
+        { -- printed calculation circuit
+          "appliedenergistics2:material",
+          16,
+          1
+        }
+    },
+    { -- engineering circuit
+        { -- printed silicon
+          "appliedenergistics2:material",
+          20,
+          1
+        },
+        { -- refined circuit
+          "contenttweaker:refinedcircuit",
+          0,
+          1
+        },
+        { -- printed engineering circuit
+          "appliedenergistics2:material",
+          17,
+          1
+        }
+    },
+    { -- logic circuit
+        { -- printed silicon
+          "appliedenergistics2:material",
+          20,
+          1
+        },
+        { -- refined circuit
+          "contenttweaker:refinedcircuit",
+          0,
+          1
+        },
+        { -- printed logic circuit
+          "appliedenergistics2:material",
+          18,
+          1
+        }
+    }
+}
 
 while true do
 	-- transmit combo data
@@ -710,5 +763,6 @@ while true do
 	rednet.broadcast(gear, "gear1")
     rednet.broadcast(solderingalloy, "solderingalloy1")
     rednet.broadcast(polyethylene, "polyethylene1")
+    rednet.broadcast(ae2circuit, "ae2circuit1")
 	os.sleep(10)
 end
